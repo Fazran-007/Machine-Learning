@@ -1,0 +1,38 @@
+
+package thread;
+
+
+public class Hithread extends Thread {
+  
+    @Override
+    public void run (){
+        System.out.println("threda is running");
+    }
+    public static void main (String[] args){
+        Hithread t=new Hithread();
+        t.start();
+        
+    }
+}
+
+
+package thread;
+
+
+public class Thread {
+
+    public void run(){
+        System.out.println("This is a thread");
+    }
+     public void start(){
+        System.out.println("Hooray its startted");
+    }
+   
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Thread t=new Thread();     
+        t.run();
+        t.start();
+    }
+    
+}
